@@ -10,7 +10,7 @@ export const ContactBento = () => {
     <>
         <div className="grid grid-cols-1 gap-2">
             <div className="bg-gray-800 p-4 rounded-md shadow-md flex flex-col gap-4 justify-between">
-                <SubtitleH3 title="Contact" subtitle="You can contact me through the following channels:"/>
+                <SubtitleH3 title="Contacto" subtitle="Puedes contactarme a través de los siguientes canales:"/>
                 <div className="flex flex-col gap-4">
                     <ExternalLink
                         name="Email"
@@ -41,7 +41,7 @@ export const ContactBento = () => {
                 }}
             >
                 <Phrase
-                    text="When creativity meets technology: an unique experience."
+                    text="Cuando la creatividad se encuentra con la tecnología: una experiencia única."
                 />
             </div>
         </div>

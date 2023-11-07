@@ -16,8 +16,8 @@ export const AboutMe = () => {
             }}
         >
             <SubtitleH3
-                title="About Me"
-                subtitle="I'm a developer with a passion for learning new technologies and building things. I love to deploy my own solutions and search the homemade way to implement things, using the tools that I have at hand. I'm mostly a self taught learner, but I also enjoy to learn from others and share my knowledge."
+                title="Sobre mí"
+                subtitle="Soy un desarrollador con pasión por aprender nuevas tecnologías y construir cosas. Me encanta desplegar mis propias soluciones y buscar la forma casera de implementar cosas, usando las herramientas que tengo a mano. Soy principalmente un autodidacta, pero también disfruto aprender de otros y compartir mi conocimiento."
                 titleColor='text-gray-500'
                 textColor='text-gray-300'
             />

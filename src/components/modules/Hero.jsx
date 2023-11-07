@@ -24,7 +24,7 @@ export const Hero = () => {
                 <div>
                     <TitleH1
                         title="Marcelo Andrés"
-                        subtitle="Full Stack Developer"
+                        subtitle="Desarrollador Full Stack"
                     />
                     <Separator height={10} />
                 </div>

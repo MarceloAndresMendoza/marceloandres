@@ -6,7 +6,8 @@ export const Badges = () => {
     <div className="bg-slate-800 rounded-md
       flex flex-row gap-4 flex-wrap p-4 overflow-y-auto 
     ">
-      <SubtitleH3 title="Badges" subtitle="Here are some of the badges I've earned." />
+      {/* <SubtitleH3 title="Badges" subtitle="Here are some of the badges I've earned." /> */}
+      <SubtitleH3 title="Insignias" subtitle="Aquí están algunas de las insignias que he obtenido." />
       <div className="flex flex-row flex-wrap gap-4 overflow-y-auto justify-center">
         <SingleBadge
           title="Moodle Admin Basics"
