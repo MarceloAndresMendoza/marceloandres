@@ -69,6 +69,7 @@ else
 
     read -p "Enter the OPENAI API key: " OPENAI_API_KEY
     read -p "Enter the MongoDB URI: " MONGODB_URI
+    read -p "Enter the port: " PORT
     
     # Create the .env file
     echo "Creating the .env file..."
@@ -89,7 +90,7 @@ Type=simple
 User=$CURRENT_USER
 Group=$CURRENT_GROUP
 WorkingDirectory=$TARGET_DIR
-ExecStart=$NODE_PATH $TARGET_DIR/node_modules/.bin/next start -p 3150
+ExecStart=$NODE_PATH $TARGET_DIR/node_modules/.bin/next start -p $PORT
 Restart=always
 
 [Install]
