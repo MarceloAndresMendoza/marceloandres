@@ -58,9 +58,6 @@ else
     echo "Installing dependencies..."
     npm install
 
-    # Building
-    echo "Building..."
-    npm run build
     
     # Configure the service
     echo "CONFIGURING THE SERVICE..."
@@ -78,6 +75,10 @@ else
     OPENAI_API_KEY=$OPENAI_API_KEY
     DB_NAME=$MONGODB_URI
 EOF
+
+#    Building
+    echo "Building..."
+    npm run build
 
     # Generate the service file
     echo "Generating the service file..."
