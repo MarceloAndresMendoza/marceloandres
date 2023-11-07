@@ -1,5 +1,6 @@
+import Image from 'next/image'
 export const SingleBadge = (props) => {
-    const { title, image, link } = props;
+    const { title, image, link, width, height } = props;
     return (
         <>
             <>
@@ -9,9 +10,11 @@ export const SingleBadge = (props) => {
                     href={link}
                     target='_blank'
                 >
-                    <img
+                    <Image
                         src={image}
                         alt={title}
+                        width={width}
+                        height={height}
                         className=' absolute top-0 left-0 z-10 object-cover object-center'
                     />
                     <div className=" group-hover:hidden">

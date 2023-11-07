@@ -1,26 +1,26 @@
-import { ExternalLink } from "../ui/ExternalLink"
-import { SubtitleH3 } from "../ui/SubtitleH3"
-import envelope from "../../assets/icons/envelope-solid.svg"
-import linkedin from "../../assets/icons/linkedin.svg"
-import bgImage from "../../assets/backdrops/dark-fluid.jpg"
-import { Phrase } from "../ui/Phrase"
+import { ExternalLink } from "@components/ui/ExternalLink"
+import { SubtitleH3 } from "@components/ui/SubtitleH3"
+import { Phrase } from "@components/ui/Phrase"
+import envelope from "@assets/icons/envelope-solid.svg"
+import linkedin from "@assets/icons/linkedin.svg"
+import bgImage from "@assets/backdrops/dark-fluid.jpg"
 
 export const ContactBento = () => {
   return (
     <>
         <div className="grid grid-cols-1 gap-2">
             <div className="bg-gray-800 p-4 rounded-md shadow-md flex flex-col gap-4 justify-between">
-                <SubtitleH3 title="Contact" subtitle="You can contact me through the following channels:"/>
+                <SubtitleH3 title="Contacto" subtitle="Puedes contactarme a través de los siguientes canales:"/>
                 <div className="flex flex-col gap-4">
                     <ExternalLink
                         name="Email"
                         link="mailto:marcelo@doblefoco.cl"
-                        icon={ envelope }
+                        icon={ envelope.src }
                     />
                     <ExternalLink
                         name="LinkedIn"
                         link="https://www.linkedin.com/in/marcelo-mendoza-7a554a245"
-                        icon={ linkedin }
+                        icon={ linkedin.src }
                     />
 
                 </div>
@@ -34,14 +34,14 @@ export const ContactBento = () => {
                             rgba(0, 0, 0, 0.7),
                             rgba(0, 0, 0, 0)
                         ),
-                        url(${bgImage})
+                        url(${bgImage.src})
                     `,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
             >
                 <Phrase
-                    text="When creativity meets technology: an unique experience."
+                    text="Cuando la creatividad se encuentra con la tecnología: una experiencia única."
                 />
             </div>
         </div>

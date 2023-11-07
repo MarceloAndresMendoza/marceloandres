@@ -1,7 +1,7 @@
-import { TitleH1 } from "../ui/TitleH1"
-import bgImage from '../../assets/backdrops/hero-bg.jpg'
-import { TechIcons } from "../ui/TechIcons"
-import { Separator } from "../ui/Separator"
+import { TitleH1 } from "@components/ui/TitleH1"
+import { TechIcons } from "@components/ui/TechIcons"
+import { Separator } from "@components/ui/Separator"
+import bgImage from '@assets/backdrops/hero-bg.jpg'
 
 export const Hero = () => {
     return (
@@ -15,7 +15,7 @@ export const Hero = () => {
                             rgba(0, 0, 0, 0.7),
                             rgba(0, 0, 0, 0)
                         ),
-                        url(${bgImage})
+                        url(${bgImage.src})
                     `,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
@@ -24,7 +24,7 @@ export const Hero = () => {
                 <div>
                     <TitleH1
                         title="Marcelo Andrés"
-                        subtitle="Full Stack Developer"
+                        subtitle="Desarrollador Full Stack"
                     />
                     <Separator height={10} />
                 </div>

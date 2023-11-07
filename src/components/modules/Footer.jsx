@@ -1,4 +1,4 @@
-import universe from '../../assets/backdrops/universe.jpg'
+import universe from '@assets/backdrops/universe.jpg'
 export const Footer = () => {
   return (
     <>
@@ -12,7 +12,7 @@ export const Footer = () => {
                         rgba(12, 17, 23, 0.5) 20%,
                         rgba(12, 17, 23, 1)
                     ),
-                    url('${universe}')
+                    url('${universe.src}')
                 `,
             }}
         >

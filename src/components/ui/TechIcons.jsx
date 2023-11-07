@@ -1,13 +1,13 @@
 import { SingleIcon } from './SingleIcon';
-import astro from '../../assets/icons/astro.png';
-import nodejs from '../../assets/icons/nodejs.png';
-import react from '../../assets/icons/react.png';
-import tailwind from '../../assets/icons/tailwind.png';
-import git from '../../assets/icons/git.png';
-import github from '../../assets/icons/github.png';
-import ec2 from '../../assets/icons/ec2.jpg';
-import expressjs from '../../assets/icons/expressjs.png';
-import mongodb from '../../assets/icons/mongodb.png';
+import astro from '@assets/icons/astro.png';
+import nodejs from '@assets/icons/nodejs.png';
+import react from '@assets/icons/react.png';
+import tailwind from '@assets/icons/tailwind.png';
+import git from '@assets/icons/git.png';
+import github from '@assets/icons/github.png';
+import ec2 from '@assets/icons/ec2.jpg';
+import expressjs from '@assets/icons/expressjs.png';
+import mongodb from '@assets/icons/mongodb.png';
 
 export const TechIcons = () => {
     return (

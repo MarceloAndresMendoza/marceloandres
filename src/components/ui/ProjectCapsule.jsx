@@ -1,6 +1,7 @@
 import { ExternalLink } from "./ExternalLink";
-import githubIcon from '../../assets/icons/github.png'
-import link from '../../assets/icons/link.svg'
+import Image from 'next/image';
+import githubIcon from '@assets/icons/github.png'
+import link from '@assets/icons/link.svg'
 
 export const ProjectCapsule = (props) => {
     const { title, description, icon, github, url } = props;
@@ -8,20 +9,26 @@ export const ProjectCapsule = (props) => {
         <>
             <div className="flex flex-row gap-4 bg-slate-900 p-4 rounded-xl">
                 <div className="flex flex-col rounded-md overflow-hidden shrink-0">
-                    <img src={icon} alt={title} className="w-32 h-32 shadow-md bg-white" />
+                    <Image
+                        src={icon}
+                        alt={title}
+                        className="w-32 h-32 shadow-md bg-white"
+                        width={128}
+                        height={128}
+                    />
                     {
                         github &&
                         <ExternalLink
                             name="GitHub"
                             link={ github }
-                            icon={ githubIcon }
+                            icon={ githubIcon.src }
                             square
                         />
                     }
                     <ExternalLink
                         name="View"
                         link={ url }
-                        icon={ link }
+                        icon={ link.src }
                         square
                     />
                 </div>
