@@ -40,6 +40,9 @@ if [ -f "$TARGET_DIR/.env" ]; then
     # Install your app's dependencies (if needed)
     echo "Installing dependencies..."
     npm install
+    # Building
+    echo "Building..."
+    npm run build
     # Restart the service
     echo "Restarting the service..."
     sudo systemctl restart marceloandres

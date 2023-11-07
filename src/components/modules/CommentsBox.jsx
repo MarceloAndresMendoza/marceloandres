@@ -10,7 +10,7 @@ const CommentsBox = () => {
     const [sendingComment, setSendingComment] = useState(false)
 
     const getComments = async () => {
-        const res = await fetch('http://marceloandres.cl:3150/api/comments')
+        const res = await fetch('https://marceloandres.cl:3150/api/comments')
         const data = await res.json()
         setComments(data.data)
     }
@@ -31,7 +31,7 @@ const CommentsBox = () => {
         
         const sendComment = async (username, comment) => {
             setSendingComment(true)
-            const res = await fetch('http://marceloandres.cl:3150/api/comments', {
+            const res = await fetch('https://marceloandres.cl:3150/api/comments', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
