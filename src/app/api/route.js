@@ -10,7 +10,8 @@ export const GET = async () => {
     const data = await res.json()
     return NextResponse.json({
         message: 'Hello from the API!',
-        exampleData: data
+        exampleData: data,
+        status: 200
     }, {
         status: 200
     })
