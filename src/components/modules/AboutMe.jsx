@@ -3,7 +3,7 @@ import bgImage from "@assets/backdrops/dark-flow.jpg"
 
 export const AboutMe = () => {
     return (
-        <div className="bg-gray-800 p-4 rounded-md shadow-md bg-cover bg-center md:col-span-2 lg:col-span-1"
+        <div className="bg-gray-800 p-4 rounded-md shadow-md bg-cover bg-center col-span-1 md:col-span-2 min-h-[250px]"
             style={{
                 backgroundImage: `
                     linear-gradient(

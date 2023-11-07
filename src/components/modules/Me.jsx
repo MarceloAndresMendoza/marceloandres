@@ -7,7 +7,7 @@ export const Me = () => {
         <Image
           src={ me.src }
           alt="My photo"
-          className="object-cover object-center"
+          className="object-cover object-center h-full w-full"
           width={ 400 }
           height={ 400 }
         />

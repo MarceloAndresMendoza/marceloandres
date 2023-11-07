@@ -8,7 +8,7 @@ import dwfs from "@assets/logos/dwfs.jpg"
 export const Experience = () => {
     return (
         <>
-            <div className="bg-slate-800 col-span-1 lg:col-span-2 p-4 rounded-md flex flex-col lg:flex-row gap-4">
+            <div className="bg-slate-800 col-span-1 lg:col-span-2 lg:col-span-2 p-4 rounded-md flex flex-col lg:flex-row gap-4">
                 <SubtitleH3
                     title="Experiencia"
                 />

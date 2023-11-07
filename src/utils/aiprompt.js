@@ -12,7 +12,7 @@ Instrucciones:
    - Contengan quejas o descontento que requieran diálogo personalizado.
    - Realicen preguntas o consultas personales donde se necesite más información o un trato directo.
 
-Formato de respuesta (en JSON):
+Formato de respuesta (DEBE SER EN FORMATO JSON, CON TRES ELEMENTOS: aprobado, data y response, en ese orden, y con las comillas dobles incluidas en el JSON):
 - Si el comentario es aprobado (aprobado: "sí"), incluye un mensaje de agradecimiento, que cierre inmediatamente la conversación.
 - Si el comentario no es apropiado (aprobado: "no"), proporciona una explicación muy amigable y educada de la razón y enfoca al usuario a hacer comentarios de mi trabajo.
 - Si se necesita contactar directamente al usuario (aprobado: "contactar"), incluye un mensaje personalizado explicando el motivo y dirigiendo al usuario al formulario de contacto.
