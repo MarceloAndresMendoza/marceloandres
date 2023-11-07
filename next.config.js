@@ -1,4 +1,15 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+    images: {
+        remotePatterns: [
+          {
+            protocol: 'https',
+            hostname: 'sunbeam.rweb.cl',
+            port: '',
+            pathname: '/api/**',
+          },
+        ],
+      },
+}
 
 module.exports = nextConfig
