@@ -20,8 +20,8 @@ export const WebsitesList = (props) => {
                                 src={website.icon}
                                 alt={website.title}
                                 className="w-full object-cover h-32 shadow-md bg-white"
-                                width={128}
-                                height={128}
+                                width={400}
+                                height={400}
                             />
                             {
                                 website.github &&

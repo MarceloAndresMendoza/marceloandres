@@ -3,9 +3,10 @@ import { db } from "@database/config/dbfres.mongodb.env";
 import { openaiCommentModerate } from "@database/controllers/openai.controller";
 
 export const getAllComments = async () => {
+    // sort by most recent
     db();
     try {
-        const allComments = await Comment.find();
+        const allComments = await Comment.find( { } ).sort( { createdAt: -1 });
         return {
             status: 200,
             data: allComments,
@@ -31,7 +32,7 @@ export const addComment = async (req) => {
             return {
                 status: 200,
                 message: 'Comentario agregado',
-                data: saveComment,
+                data: moderatedComment,
             }
         } else if (moderatedComment.aprobado == 'contactar') {
             return {
