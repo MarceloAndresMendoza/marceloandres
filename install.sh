@@ -20,6 +20,7 @@ TARGET_DIR="/opt/marceloandres"
 
 # Get node path on PATH env
 NODE_PATH=$(which node | grep 'node')
+NPM_PATH=$(which npm | grep 'npm')
 
 # Get the current username
 CURRENT_USER=$(whoami)
@@ -56,6 +57,10 @@ else
     # Install your app's dependencies (if needed)
     echo "Installing dependencies..."
     npm install
+
+    # Building
+    echo "Building..."
+    npm run build
     
     # Configure the service
     echo "CONFIGURING THE SERVICE..."
@@ -84,7 +89,7 @@ Type=simple
 User=$CURRENT_USER
 Group=$CURRENT_GROUP
 WorkingDirectory=$TARGET_DIR
-ExecStart=$TARGET_DIR/npm run start
+ExecStart=$NODE_PATH $TARGET_DIR/node_modules/.bin/next start -p 3150
 Restart=always
 
 [Install]
