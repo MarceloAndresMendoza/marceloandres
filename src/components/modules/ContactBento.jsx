@@ -2,6 +2,7 @@ import { ExternalLink } from "@components/ui/ExternalLink"
 import { SubtitleH3 } from "@components/ui/SubtitleH3"
 import { Phrase } from "@components/ui/Phrase"
 import envelope from "@assets/icons/envelope-solid.svg"
+import github from "@assets/icons/github.png"
 import linkedin from "@assets/icons/linkedin.svg"
 import bgImage from "@assets/backdrops/dark-fluid.jpg"
 
@@ -16,6 +17,11 @@ export const ContactBento = () => {
                         name="Email"
                         link="mailto:marcelo@doblefoco.cl"
                         icon={ envelope.src }
+                    />
+                    <ExternalLink
+                        name="GitHub"
+                        link="https://github.com/MarceloAndresMendoza"
+                        icon={ github.src }
                     />
                     <ExternalLink
                         name="LinkedIn"
