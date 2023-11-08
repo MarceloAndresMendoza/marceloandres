@@ -12,9 +12,9 @@ export const ProjectCapsule = (props) => {
                     <Image
                         src={icon}
                         alt={title}
-                        className="w-32 h-32 shadow-md bg-white"
-                        width={128}
-                        height={128}
+                        className="w-32 h-32 shadow-md bg-white object-cover"
+                        width={256}
+                        height={256}
                     />
                     {
                         github &&

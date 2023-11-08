@@ -9,12 +9,13 @@ export const WebsitesList = (props) => {
   return (
     <div>
         <SubtitleH3
-            title="Other websites made by me"
+            // title="Other websites made by me"
+            title="Otros sitios web hechos por mí"
         />
-        <div className="flex flex-row gap-4 bg-slate-900 p-4 rounded-md">
+        <div className="flex flex-col sm:flex-row gap-4 bg-slate-900 p-4 rounded-md flex-wrap">
             { websites.map ((website, index) => {
                 return (
-                    <div className="flex flex-col gap-4 bg-slate-900 p-4 rounded-md flex-1" key={index}>
+                    <div className="flex flex-col gap-4 bg-slate-900 p-4 rounded-md flex-1 min-w-[250px]" key={index}>
                         <div className="flex flex-col rounded-md overflow-hidden shrink-0">
                             <Image
                                 src={website.icon}

@@ -39,5 +39,5 @@ Respuesta JSON:
 }
 '''
 
-Recuerda que en el caso de mensajes como "hola", que son irrelevantes para el objetivo del formulario, la respuesta debería ser "no". Además, cualquier amenaza o comentario claramente inapropiado también debe ser rechazado. En los casos de descontento o comentarios negativos que pueden ser constructivos ("no me gustó su diseño, pero es rápido"), debes responder con "contactar" para fomentar una comunicación más efectiva a través del formulario de contacto y brindar asistencia adicional.
+Recuerda que en el caso de mensajes como "hola", que son irrelevantes para el objetivo del formulario, el json debe responder con "aprobado": "no". Además, cualquier amenaza o comentario claramente inapropiado también debe ser rechazado. En los casos de descontento o comentarios negativos que pueden ser constructivos ("no me gustó su diseño, pero es rápido"), debes responder con "contactar" para fomentar una comunicación más efectiva a través del formulario de contacto y brindar asistencia adicional.
     `
