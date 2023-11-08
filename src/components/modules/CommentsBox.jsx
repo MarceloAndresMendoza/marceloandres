@@ -22,7 +22,7 @@ const CommentsBox = () => {
         if (serverResponse && serverResponse.aprobado === 'sí') {
             swal('Comentario enviado', serverResponse.response ?? null, 'success')
         } else {
-            swal('Error', serverResponse.response ?? null, 'warning')
+            swal('No se ha publicado tu comentario', serverResponse.response ?? null, 'warning')
         }
     }
 
@@ -91,10 +91,10 @@ const CommentsBox = () => {
                             return (
                                 <div key={index} className="border-b border-slate-700 py-2">
                                     <div className="flex flex-row gap-4 items-center justify-between">
-                                        <p className="text-slate-900 text-lg font-semibold">{comment.username}</p>
+                                        <p className="text-slate-300 text-lg font-semibold">{comment.username}</p>
                                         <p className="text-slate-800 text-base">{localizedDate}</p>
                                     </div>
-                                    <p className="text-slate-200 text-base">{comment.comment}</p>
+                                    <p className="text-slate-100 text-base">{comment.comment}</p>
 
                                 </div>
                             )
